@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        .toggle-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Geetha</h1>
+            <p>Email:geethageetha13102007@gmail.com | Phone:9087251292 | LinkedIn: linkedin.com/in/geetha</p>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p>Highly motivated and results-oriented professional with X years of experience in [Your Industry]. Proven ability to [Key Skill 1] and [Key Skill 2]. Seeking to leverage expertise in a challenging role.</p>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <h3>Software Engineer | Tech Innovations Inc. | 2020 - Present</h3>
+            <ul>
+                <li>Developed and maintained web applications using [Technologies].</li>
+                <li>Collaborated with cross-functional teams to deliver high-quality software solutions.</li>
+                <li>Implemented new features, resulting in [Quantifiable achievement].</li>
+            </ul>
+            <h3>Junior Developer | Web Solutions Co. | 2018 - 2020</h3>
+            <ul>
+                <li>Assisted in the development of client websites.</li>
+                <li>Performed debugging and testing of applications.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <h3>Bachelor of Science in Computer Science | Bwda arts and science college | 2024 - 2026</h3>
+            <p>Relevant coursework: Data Structures, Algorithms, Web Development</p>
+        </section>
+
+        <section id="skills-section">
+            <h2>Skills</h2>
+            <button class="toggle-button" onclick="toggleSkills()">Show/Hide Skills</button>
+            <div id="skills-list" style="display: none;">
+                <ul>
+                    <li><strong>Programming Languages:</strong> Python, JavaScript, Java</li>
+                    <li><strong>Web Technologies:</strong> HTML, CSS, React, Node.js</li>
+                    <li><strong>Databases:</strong> SQL, MongoDB</li>
+                    <li><strong>Tools:</strong> Git, Docker</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleSkills() {
+            const skillsList = document.getElementById('skills-list');
+            if (skillsList.style.display === 'none') {
+                skillsList.style.display = 'block';
+            } else {
+                skillsList.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
