@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    .toggle-button {
+      background: #3498db;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .toggle-button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Resume</h1>
+
+    <section>
+      <h2>Experience</h2>
+      <h3>Software Engineer | Tech Innovations Inc. | 2020 - Present</h3>
+      <ul>
+        <li>Developed and maintained web applications using [Technologies].</li>
+        <li>Collaborated with cross-functional teams to deliver high-quality software solutions.</li>
+        <li>Implemented new features, resulting in [Quantifiable achievement].</li>
+      </ul>
+      <h3>Junior Developer | Web Solutions Co. | 2018 - 2020</h3>
+      <ul>
+        <li>Assisted in the development of client websites.</li>
+        <li>Performed debugging and testing of applications.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <h3>Bachelor of Science in Computer Science | Bwda Arts and Science College | 2024 - 2026</h3>
+      <p>Relevant coursework: Data Structures, Algorithms, Web Development</p>
+    </section>
+
+    <section id="skills-section">
+      <h2>Skills</h2>
+      <button class="toggle-button" onclick="toggleSkills()">Show/Hide Skills</button>
+      <div id="skills-list" style="display: none;">
+        <ul>
+          <li><strong>Programming Languages:</strong> Python, JavaScript, Java</li>
+          <li><strong>Web Technologies:</strong> HTML, CSS, React, Node.js</li>
+          <li><strong>Databases:</strong> SQL, MongoDB</li>
+          <li><strong>Tools:</strong> Git, Docker</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function toggleSkills() {
+      const skillsList = document.getElementById('skills-list');
+      if (skillsList.style.display === 'none') {
+        skillsList.style.display = 'block';
+      } else {
+        skillsList.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
